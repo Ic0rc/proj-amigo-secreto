@@ -2,12 +2,18 @@
 let amigos = [];
 
 
+function limparTexto(){
+    let inserirNome = document.querySelector('input');
+    inserirNome.value = '';
+}
+
 function adicionarAmigo(){
     if (document.querySelector('input').value == "") {
         alert('Por favor, insira um nome válido')
     } else {
         let inserirNome = document.querySelector('input').value;
         amigos.push(inserirNome);
+        limparTexto();
         console.log(amigos);
     }
     
