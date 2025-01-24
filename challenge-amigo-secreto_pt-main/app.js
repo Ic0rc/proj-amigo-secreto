@@ -6,13 +6,23 @@ function limparTexto(){
     let inserirNome = document.querySelector('input');
     inserirNome.value = '';
 }
+function insereAmigosLista(){
+    let inserirNome = document.querySelector('input').value; //captura o valor inserido no campo texto
+    amigos.push(inserirNome); //insere na lista de amigos
+
+    let lista = document.getElementById('listaAmigos').innerHTML + "<li>" + inserirNome + "</li>"; 
+    //variável que entra na ID lista e abre para alteração e insere o novo nome na lista
+
+    document.getElementById("listaAmigos").innerHTML = lista;
+    //altera a lista e mostra ela atualizada
+}
+
 
 function adicionarAmigo(){
     if (document.querySelector('input').value == "") {
         alert('Por favor, insira um nome válido')
     } else {
-        let inserirNome = document.querySelector('input').value;
-        amigos.push(inserirNome);
+        insereAmigosLista();
         limparTexto();
         console.log(amigos);
     }
