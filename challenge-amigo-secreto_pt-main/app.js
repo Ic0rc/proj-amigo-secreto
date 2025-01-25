@@ -1,34 +1,43 @@
 //O principal objetivo deste desafio é fortalecer suas habilidades em lógica de programação. Aqui você deverá desenvolver a lógica para resolver o problema.
 let amigos = [];
-
-
+function inserirNome() {
+    return document.querySelector('input').value; //captura o valor inserido no campo texto
+}
 function limparTexto(){
-    let inserirNome = document.querySelector('input');
-    inserirNome.value = '';
+    let limpaTexto = document.querySelector('input');
+    limpaTexto.value = '';
 }
-function insereAmigosLista(){
-    let inserirNome = document.querySelector('input').value; //captura o valor inserido no campo texto
-    amigos.push(inserirNome); //insere na lista de amigos
-
-    let lista = document.getElementById('listaAmigos').innerHTML + "<li>" + inserirNome + "</li>"; 
-    //variável que entra na ID lista e abre para alteração e insere o novo nome na lista
-
-    document.getElementById("listaAmigos").innerHTML = lista;
-    //altera a lista e mostra ela atualizada
-}
-
-
 function adicionarAmigo(){
-    if (document.querySelector('input').value == "") {
-        alert('Por favor, insira um nome válido')
-    } else {
-        insereAmigosLista();
+    if (amigos.includes(inserirNome())){
+        alert("Este nome já existe na lista, favor inclua outro.")
         limparTexto();
-        console.log(amigos);
-    }
+        console.log(amigos)
+
+    } else if (!document.querySelector('input').value.trim()){
+        alert('Por favor, insira um nome válido');
+        console.log(amigos)
+        limparTexto()
     
+    } else {
+        insereAmigosLista()
+        console.log(amigos)
+    }
+}
+
+function insereAmigosLista(){
+    amigos.push(inserirNome()); //insere na lista de amigos
+
+        let lista = document.getElementById('listaAmigos').innerHTML + "<li>" + inserirNome() + "</li>"; 
+        //variável que entra na ID lista e abre para alteração e insere o novo nome na lista
+
+        document.getElementById("listaAmigos").innerHTML = lista;
+        //altera a lista e mostra ela atualizada
+        limparTexto()
+}
+
+
 
     // function sortearAmigo(){
-    //    return parseInt(Math.random() * amigos.length + 1)
+    //    return parseInt(Math.random() * amigos.length)
     // }
-}
+
