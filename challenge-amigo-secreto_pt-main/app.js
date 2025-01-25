@@ -2,14 +2,6 @@
 let amigos = [];
 
 
-function listaDeAmigos(){
-    return document.getElementById('listaAmigos').innerHTML;
-}
-
-
-
-
-
 function inserirNome() {
     return document.querySelector('input').value; //captura o valor inserido no campo texto
 }
