@@ -30,11 +30,15 @@
 
 # 📁 Acesso ao projeto
 
-Você pode baixar o projeto
+Você pode baixar o projeto através [deste link](https://github.com/Ic0rc/proj-amigo-secreto/archive/refs/heads/main.zip)
 
 # 🛠️ Abrir e rodar o projeto
 
-**Apresente as instruções necessárias para abrir e executar o projeto**
+Após baixar e descompactar, você entra na pasta:
 
+>challenge-amigo-secreto_pt-main
+
+Seleciona o arquivo:
+>index.html
 
 
