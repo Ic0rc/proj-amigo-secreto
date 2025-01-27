@@ -41,4 +41,10 @@ Após baixar e descompactar, você entra na pasta:
 Seleciona o arquivo:
 >index.html
 
+# :computer: Técnologias Utilizadas
+
+- HTML
+- JavaScript
+- CSS
+
 
