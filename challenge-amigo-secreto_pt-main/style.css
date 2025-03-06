@@ -1,9 +1,9 @@
 :root {
-    --color-primary: #4B69FD;
+    --color-primary: #808080;
     --color-secondary: #FFF9EB;
     --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
-    --color-button-hover: #e55720;
+    --color-button: #6664da;
+    --color-button-hover: #5c72b9;
     --color-text: #444444;
     --color-white: #FFFFFF;
 }
@@ -15,12 +15,14 @@
     box-sizing: border-box;
 }
 
+
 body {
     height: 100vh;
     background-color: var(--color-primary);
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(./assets/cool-background.png)
 }
 
 .main-content {
