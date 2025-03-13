@@ -1,4 +1,4 @@
- ![Boneco segurando um tablet com a palavra "Amigos secreto" no canto inferior esquerdo](https://github.com/user-attachments/assets/a9d9ecd3-dcbd-4361-aaee-63e9f62f7f58)
+ ![Shrek o burro e o gato de botas, juntos](./challenge-amigo-secreto_pt-main/assets/Tela.png)
 <img loading="lazy" src="http://img.shields.io/static/v1?label=Status&message=Em%20desenvolvimento&color=GREEN&style=for-the-badge"/>
 <h1 align="center"> Projeto em Javascript para sortear um amigo secreto </h1>
 <p align="left">
